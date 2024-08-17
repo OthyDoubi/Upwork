@@ -1,0 +1,29 @@
+name: Update RSS Feed
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Exécute toutes les heures
+  workflow_dispatch:  # Permet l'exécution manuelle
+
+jobs:
+  update-rss:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests beautifulsoup4 pytz
+    - name: Run RSS update script
+      run: python update_rss.py
+    - name: Commit and push if changed
+      run: |
+        git config --global user.name 'GitHub Actions Bot'
+        git config --global user.email 'actions@github.com'
+        git add upwork_graphic_designer_feed.xml
+        git commit -m "Update RSS feed" -a || echo "No changes to commit"
+        git push
