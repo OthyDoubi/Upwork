@@ -37,6 +37,7 @@ def update_rss_feed(jobs):
 
     tree = ET.ElementTree(rss)
     tree.write('upwork_graphic_designer_feed.xml', encoding='UTF-8', xml_declaration=True)
+    print(f"Nombre d'offres récupérées : {len(jobs)}")
 
 def main():
     jobs = fetch_upwork_jobs()
