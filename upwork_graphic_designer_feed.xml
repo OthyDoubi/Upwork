@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Offres Upwork pour Graphic Designer</title>
+    <link>https://www.upwork.com/nx/search/jobs/?client_hires=1-9,10-&amp;nbs=1&amp;payment_verified=1&amp;q=graphic%20designer&amp;sort=recency</link>
+    <description>Les dernières offres pour les designers graphiques sur Upwork</description>
+    <language>fr</language>
+    <item>
+      <title>Création de logo pour une startup tech</title>
+      <link>https://www.upwork.com/jobs/~01234abcd5678efgh</link>
+      <description>Nous recherchons un designer graphique talentueux pour créer un logo moderne et innovant pour notre startup technologique.</description>
+      <pubDate>Fri, 23 Aug 2024 14:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Designer pour refonte de site web e-commerce</title>
+      <link>https://www.upwork.com/jobs/~09876zyxw5432vutsr</link>
+      <description>Besoin d'un designer expérimenté pour revoir l'interface utilisateur de notre site e-commerce et améliorer l'expérience client.</description>
+      <pubDate>Fri, 23 Aug 2024 13:45:00 +0000</pubDate>
+    </item>
+    <!-- D'autres éléments <item> suivraient ici, chacun représentant une offre d'emploi différente -->
+  </channel>
+</rss>
